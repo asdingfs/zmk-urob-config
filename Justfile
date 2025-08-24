@@ -53,19 +53,21 @@ clean-all: clean
 clean-nix:
     nix-collect-garbage --delete-old
 
+# clear draw cache
+clean-draw:
+    rm -f "{{ draw }}/base.svg"
+
 # parse & plot keymap
 draw:
     #!/usr/bin/env bash
     set -euo pipefail
-    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/base.keymap"
-    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/base.yaml" -z corne >"{{ draw }}/base.svg"
+    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/base.keymap" | keymap -c "{{ draw }}/config.yaml" draw - -z corne >"{{ draw }}/base.svg"
 
 # parse & plot keymap (keys only, no combos)
 draw-keys:
     #!/usr/bin/env bash
     set -euo pipefail
-    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/base.keymap"
-    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/base.yaml" -z corne --keys-only >"{{ draw }}/base.svg"
+    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/base.keymap" | keymap -c "{{ draw }}/config.yaml" draw - -z corne --keys-only >"{{ draw }}/base.svg"
 
 # initialize west
 init:
