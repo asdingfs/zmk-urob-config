@@ -239,13 +239,13 @@ ZMK_BASE_LAYER(Numbr,
 // All Symbols: 32
 ZMK_BASE_LAYER(Symbl,
 //╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮ ╭───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────╮
-    &kp TILDE           &kp EXCL            &kp LT              &kp GT              &kp MINUS           &kp PIPE          ,   &kp CARET           &kp LBRC            &kp RBRC            &kp DLLR            &kp COLON           &kp BSPC          ,
+    &kp TAB             &kp AT              &kp LT              &kp GT              &kp MINUS           &kp PIPE          ,   &kp CARET           &kp LBRC            &kp RBRC            &kp MINUS           &kp BSLH            &kp BSPC          ,
 //├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤ ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    &kp GRAVE           &hml LGUI PLUS      &hml LALT STAR      &hml LSHFT FSLH     &hml LCTRL EQUAL    &kp AMPS          ,   &kp HASH            &hmr LCTRL LPAR     &hmr RSHFT RPAR     &hmr LALT BSLH      &hmr LGUI SEMI      &kp APOS          ,
+    &kp GRAVE           &hml LGUI EXCL      &hml LALT STAR      &hml LSHFT FSLH     &hml LCTRL EQUAL    &kp AMPS          ,   &kp HASH            &hmr LCTRL LPAR     &hmr RSHFT RPAR     &hmr LALT UNDER     &hmr LGUI COLON     &kp DQT           ,
 //├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤ ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    &kp AT              &kp DQT             &kp UNDER            &kp LBKT            &kp RBKT           &kp PRCNT         ,   ___                 &kp UNDER           &kp COMMA           &kp DOT             &kp QMARK           &kp ESC           ,
+    &kp DLLR            &kp TILDE           &kp PLUS             &kp LBKT            &kp RBKT           &kp PRCNT         ,   &kp APOS            &kp SEMI            &kp COMMA           &kp DOT             &kp QMARK           &kp ESC           ,
 //╰───────────────────┼───────────────────┴───────────────────┼───────────────────┼───────────────────┼───────────────────┤ ├───────────────────┼───────────────────┼───────────────────┼───────────────────┴───────────────────────────────────────╯
-                                                                 ___                 &kp LSHIFT        ___               ,   ___                 ___                  &kp RET
+                                                                 ___                 &kp LSHIFT        ___               ,    ___                 ___                 &kp RET
 //                                                            ╰───────────────────┴───────────────────┴───────────────────╯ ╰───────────────────┴───────────────────┴───────────────────╯
 )
 
