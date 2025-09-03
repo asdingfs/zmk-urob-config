@@ -176,8 +176,8 @@ ZMK_MACRO(leader_sft, bindings = <&sk LSHFT &leader>;)
 #define VOL_DOWN  &hml LGUI C_VOL_DN
 #define VOL_UP    &hml LALT C_VOL_UP
 #define VOL_MUTE  &hml LSHIFT C_MUTE
-#define DSK_PREV  &hmr LCTRL LG(LC(LEFT)) // Previous desktop.
-#define DSK_NEXT  &hmr LALT LG(LC(RIGHT)) // Next     desktop.
+#define DSK_PREV  &kp LG(LC(LEFT)) // Previous desktop.
+#define DSK_NEXT  &kp LG(LC(RIGHT)) // Next     desktop.
 #define PIN_WIN   &kp LG(LC(LS(Q)))       // Pin window across desktops.
 #define PIN_APP   &kp LG(LC(LS(A)))       // Pin application across desktops.
 #define DSK_MGR   &kp LA(GRAVE)           // Desktop manager.
@@ -202,13 +202,13 @@ ZMK_BASE_LAYER(Base,
 
 ZMK_BASE_LAYER(Navig,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    ___           &kp LA(F4)    &swapper      &kp LS(TAB)   &kp TAB       ___         ,   &kp PG_UP     NAV_BSPC      NAV_UP        NAV_DEL       ___           ___         ,
+    &kp LA(F4)    &kp HOME      &kp END       &kp LS(TAB)   &kp TAB       ___         ,   &kp PG_UP     NAV_BSPC      NAV_UP        NAV_DEL       ___           ___         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     ___           &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     ___         ,   &kp PG_DN     NAV_LEFT      NAV_DOWN      NAV_RIGHT     ___           ___         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           ___           ___           ___           ___           ___         ,   &kp INS       &kp HOME      ___           &kp END       ___           CANCEL      ,
+    ___           DSK_PREV      DSK_NEXT      &kp COMMA     &kp DOT       ___         ,   ___           ___           ___           ___           ___           CANCEL      ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              ___           &kp LSHIFT    ___         ,   ___           ___           &kp RET
+                                              &kp INS       &kp LSHIFT    ___         ,   ___           ___           &kp RET
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 )
 
@@ -255,7 +255,7 @@ ZMK_BASE_LAYER(Mouse,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     ___           &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     ___         ,   &kp PG_DN     U_MS_L        U_MS_D        U_MS_R        U_WH_D        &kp TAB     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           ___           ___           &kp COMMA     &kp DOT       ___         ,   &kp SPC       &mkp LCLK     &mkp MCLK     &mkp RCLK     ___           &kp ESC     ,
+    ___           DSK_PREV      DSK_NEXT      &kp COMMA     &kp DOT       ___         ,   &kp SPC       &mkp LCLK     &mkp MCLK     &mkp RCLK     ___           &kp ESC     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                               ___           &kp LSHIFT    ___         ,   ___           ___           &kp RET
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
