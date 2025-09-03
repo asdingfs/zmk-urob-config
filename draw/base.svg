@@ -401,22 +401,18 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(84, 105)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Gui</text>
-<text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(140, 91)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Alt</text>
-<text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(196, 84)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Shift</text>
-<text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(252, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Ctrl</text>
-<text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(308, 98)" class="key trans keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -489,7 +485,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(812, 161)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">CANCEL</text>
+<text x="0" y="0" class="key tap">Esc</text>
 </g>
 <g transform="translate(224, 205)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -579,8 +575,9 @@ path.combo { stroke: #7f7f7f; }
 <use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:volume-off"/>
 <text x="0" y="24" class="key hold">LSHIFT</text>
 </g>
-<g transform="translate(252, 91)" class="key trans keypos-16">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(252, 91)" class="key keypos-16">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Ctrl</text>
 </g>
 <g transform="translate(308, 98)" class="key trans keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -668,7 +665,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(812, 161)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">CANCEL</text>
+<text x="0" y="0" class="key tap">Esc</text>
 </g>
 <g transform="translate(224, 205)" class="key held keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
@@ -781,6 +778,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(756, 105)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">+</text>
+<text x="0" y="24" class="key hold">Gui</text>
 </g>
 <g transform="translate(812, 105)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1203,11 +1201,11 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">LSHIFT</text>
 </g>
-<g transform="translate(351, 224) rotate(30.0)" class="key trans keypos-38">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
+<g transform="translate(351, 224) rotate(30.0)" class="key held keypos-38">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
 </g>
-<g transform="translate(489, 224) rotate(-30.0)" class="key trans keypos-39">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
+<g transform="translate(489, 224) rotate(-30.0)" class="key held keypos-39">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
 </g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key trans keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
